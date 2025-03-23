@@ -35,6 +35,7 @@ Interval - 30 sec
 If you only have 1 cpu, you may need to modify the section "# Parse CPU temps" - just set $cpu2Temp = $cpu1Temp  
 
 **Troubleshooting:**  
+In the "# Configuration" secion, set $showCommands = $true (comment the false line, uncomment the true line).  This will show the verbatim output of commands.
 Run ipmitool manually to see if it connects properly.  If it cannot connect to the idrac, it won't work.  
 When iDrac is configured for LOM, the host may not be able to access that IP address.  Ping it.  
 If CPU/GPU values are not being parsed correctly, they may need adjusted in the "# GET CPU" and "#Get GPU" sections  
