@@ -7,6 +7,8 @@ Some minor modifications may be needed for other models
 This project is licensed under the MIT License with a No-Sale Restriction. You can use, modify, and include it in other works (even commercial ones), but you may not sell or distribute `PowerEdgeGPUCooler.ps1` as a standalone commercial product. See the [LICENSE](LICENSE) file for details.  
 Copyright (c) 2025 djAfk
 
+[Download PowerEdgeGPUCooler.ps1](PowerEdgeGPUCooler.ps1)
+
 **What it does**:  
 This tool checks the CPU and GPU temperatures every 30 sec and sets the fan speeds as follows  
 If any cpu or gpu temp is above the lower threshold, it turns off automatic fan control and applies the script fan speed  
