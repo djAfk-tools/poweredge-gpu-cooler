@@ -37,15 +37,15 @@ When iDrac is configured for LOM, the host may not be able to access that IP add
 If CPU/GPU values are not being parsed correctly, they may need adjusted in the "# GET CPU" and "#Get GPU" sections
 Check your command outputs compared to the expected outputs below
 
-Expected output of nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader:
-25
-30
+Expected output of `nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader`:
+```25
+30```
 
-Expected output of ipmitool sdr type Temperature:
-Inlet Temp       | 04h | ok  |  7.1 | 9 degrees C
+Expected output of `ipmitool sdr type Temperature`:
+```Inlet Temp       | 04h | ok  |  7.1 | 9 degrees C
 Exhaust Temp     | 01h | ok  |  7.1 | 14 degrees C
 Temp             | 0Eh | ok  |  3.1 | 23 degrees C
-Temp             | 0Fh | ok  |  3.2 | 25 degrees C
+Temp             | 0Fh | ok  |  3.2 | 25 degrees C```
 
 Expected output of script:
 Starting PowerEdge GPU Cooler script (running as Administrator). Press Ctrl+C to stop.
