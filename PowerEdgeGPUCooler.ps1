@@ -1,4 +1,6 @@
 # PowerEdgeGPUCooler.ps1
+# Copyright (c) 2025 djAfk
+# Licensed under the MIT License with No-Sale Restriction (see LICENSE file)
 # Scales fan speed based on max of GPU and CPU temps using ipmitool (remote)
 # Auto-elevates to run as Administrator if not already elevated
 
