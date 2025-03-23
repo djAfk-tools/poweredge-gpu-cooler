@@ -38,14 +38,18 @@ If CPU/GPU values are not being parsed correctly, they may need adjusted in the 
 Check your command outputs compared to the expected outputs below
 
 Expected output of `nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader`:
-```25
-30```
+```
+25
+30
+```
 
 Expected output of `ipmitool sdr type Temperature`:
-```Inlet Temp       | 04h | ok  |  7.1 | 9 degrees C
+```
+Inlet Temp       | 04h | ok  |  7.1 | 9 degrees C
 Exhaust Temp     | 01h | ok  |  7.1 | 14 degrees C
 Temp             | 0Eh | ok  |  3.1 | 23 degrees C
-Temp             | 0Fh | ok  |  3.2 | 25 degrees C```
+Temp             | 0Fh | ok  |  3.2 | 25 degrees C
+```
 
 Expected output of script:
 Starting PowerEdge GPU Cooler script (running as Administrator). Press Ctrl+C to stop.
