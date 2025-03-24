@@ -35,6 +35,8 @@ Interval - 30 sec
 If you only have 1 cpu, you may need to modify the section "# Parse CPU temps" - just set $cpu2Temp = $cpu1Temp  
 
 **Troubleshooting:**  
+If the GPU is assigned to a VM, the script will need to run inside the VM so it can contact the card with nvidia-smi  
+If the script is terminated, the fans will stay at their current value, the set values do not survive a reboot  
 In the "# Configuration" secion, set $showCommands = $true (comment the false line, uncomment the true line).  This will show the verbatim output of commands.  
 Run ipmitool manually to see if it connects properly.  If it cannot connect to the idrac, it won't work.  
 When iDrac is configured for LOM, the host may not be able to access that IP address.  Ping it.  
